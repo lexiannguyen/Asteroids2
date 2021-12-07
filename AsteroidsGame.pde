@@ -12,7 +12,7 @@ public void setup()
     sue[i] = new Star();
   }
   
-  for(int i = 0; i<rocks.size(); i++){
+  for(int i = 0; i<10; i++){
     rocks.add(new Asteroid());
   }
   
