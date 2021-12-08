@@ -6,21 +6,22 @@ public Asteroid(){
   corners = 6; //similar to lightning??while __, changex = random #,controls 
                 //add changex and changey to original corner?
       xCorners = new int[corners];
-      yCorners = new int[] {15, 15, 0, -15, -15, 0};
+      yCorners = new int[CORNERS];
       
-       xCorners[0] = -10 + (int)(Math.random()*10) - 5;
+      xCorners[0] = -15 + (int)(Math.random()*10) - 5; //obtuse ANGLES
        xCorners[1] = -15 + (int)(Math.random()*10) - 2;
-      xCorners[2] = -10 + (int)(Math.random()*10) - 3;
-      xCorners[3] = 10 + (int)(Math.random()*10) - 2;
+      xCorners[2] = 0 + (int)(Math.random()*10) - 3;
+      xCorners[3] = 15 + (int)(Math.random()*10) - 2;
       xCorners[4] = 15 + (int)(Math.random()*10) - 3;
-      xCorners[5] = 10 + (int)(Math.random()*10) - 2;
+      xCorners[5] = 0 + (int)(Math.random()*10) - 2;
       
-      yCorners[0] = 15 + (int)(Math.random()*15) - 5;
-      yCorners[1] = 15 + (int)(Math.random()*15) - 5;
-      yCorners[2] = 0 + (int)(Math.random()*15) - 5;
-      yCorners[3] = -15 + (int)(Math.random()*15) - 5;
-      yCorners[4] = -15 + (int)(Math.random()*15) - 5;
-      yCorners[5] = 0 + (int)(Math.random()*15) - 5;
+      yCorners[0] = 8 + (int)(Math.random()*15) - 5;
+      yCorners[1] = -8 + (int)(Math.random()*15) - 5;
+      yCorners[2] = -13 + (int)(Math.random()*15) - 5;
+      yCorners[3] = -8 + (int)(Math.random()*15) - 5;
+      yCorners[4] = 8 + (int)(Math.random()*15) - 5;
+      yCorners[5] = 13 + (int)(Math.random()*15) - 5;
+
       
       myColor = 255;
       myCenterX = (int)(Math.random()*400);
