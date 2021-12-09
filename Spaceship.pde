@@ -45,6 +45,10 @@ class Spaceship extends Floater
       myPointDirection = (int)(Math.random()*360);
       
     }
+     public void show(){
+      fill(myColor);
+      super.show();
+    }
     public void keyPressed(){ //moves once
     
       if (key == 'a' || key == 'A'){ //continually spins bc lastkeypressed = remembered
