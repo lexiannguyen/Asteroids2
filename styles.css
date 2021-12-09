@@ -1,7 +1,7 @@
 
 body {
     background-color: rgb(87, 99, 156);
-    color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
     font-family: "Open Sans", sans-serif;
     text-align: center;
 }
@@ -11,9 +11,7 @@ body {
     margin-left: auto;
     margin-right: auto
 }
-*{
-	text-color: white;	
-}
+
 header {
 	
 }
