@@ -73,6 +73,6 @@ public void draw()
     } 
   } 
   bob.move();
-  //bob.setColor(80);
+  bob.setColor(#ed79a5);
   bob.show(); 
 }
