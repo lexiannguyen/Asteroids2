@@ -39,7 +39,7 @@ public Asteroid(){
     }
   public void show ()  //Draws the floater at the current position  
   {             
-    fill(myColor);
+    noFill();
     stroke(myColor);    
     
 
