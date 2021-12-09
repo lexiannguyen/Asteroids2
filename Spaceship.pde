@@ -15,6 +15,9 @@ class Spaceship extends Floater
       myPointDirection = 0;
       
     }
+       public void setColor(int x){
+      myColor = x;
+    } 
     public void setXspeed(double x){
       myXspeed = x;
     }
