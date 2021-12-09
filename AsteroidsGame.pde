@@ -1,6 +1,7 @@
 //your variable declarations here
 Star[] sue; //declare
 ArrayList <Asteroid> rocks = new ArrayList <Asteroid>();
+ArrayList <Spaceship> fleet = new ArrayList <Spaceship>();
 Spaceship bob = new Spaceship();
 public void setup() 
 {
@@ -15,6 +16,15 @@ public void setup()
   for(int i = 0; i<10; i++){
     rocks.add(new Asteroid());
   }
+  for(int i = 0; i<10; i++){
+    fleet.add(new Spaceship());
+  }
+  for(int i = 0; i<fleet.size(); i++){
+   fleet.get(i).setCenterX((int)(Math.random()*400));
+    fleet.get(i).setCenterY((int)(Math.random()*400)); 
+  }
+  
+ 
   
 }
 public void draw() 
@@ -31,6 +41,13 @@ public void draw()
     if (d<10)
       rocks.remove(i);
   }
+  for(int i = 0; i<fleet.size(); i++){
+    fleet.get(i).move();
+    fleet.get(i).setXspeed(bob.getSpeedX());
+    fleet.get(i).setYspeed(bob.getSpeedY());
+    fleet.get(i).setPD(bob.getPD());
+    fleet.get(i).show();
+  }
 
 
   if(keyPressed){ //moves once
@@ -39,6 +56,9 @@ public void draw()
       } 
     if(key == 'h'){
         bob.hyperspace();
+        for(int i = 0; i<fleet.size(); i++){
+         fleet.get(i).hyperspace();
+  }
         bob.move();
         bob.accelerate(0.3);
       }
@@ -53,6 +73,6 @@ public void draw()
     } 
   } 
   bob.move();
+  //bob.setColor(80);
   bob.show(); 
 }
-
